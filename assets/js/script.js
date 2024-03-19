@@ -29,32 +29,32 @@ let dental = [
 
 //Agregar código para el desafio 2 aquí
 
-let nuevosDatosTraumatologia = [
+// 1.- EJERCICIO 1:
+traumatologia.push(
   { hora: "09:00", especialista: "RENÉ POBLETE", paciente: "ANA GELLONA", rut: "13123329-7", prevision: "ISAPRE"},
   { hora: "09:30", especialista: "MARIA SOLAR", paciente: "RAMIRO ANDRADE", rut: "12221451-K", prevision: "FONASA"},
-  { hora: "10:00",especialista: "RAUL LOYOLA",paciente: "CARMEN ISLA",rut: "10112348-3",prevision: "ISAPRE"},
-  { hora: "10:30",especialista: "ANTONIO LARENAS",paciente: "PABLO LOAYZA",rut: "13453234-1",prevision: "ISAPRE"},
-  { hora: "12:00",especialista: "MATIAS ARAVENA",paciente: "SUSANA POBLETE",rut: "14345656-6",prevision: "FONASA"},
-];
-
-
-// 1.- EJERCICIO 1:
-nuevosDatosTraumatologia.push();
+  { hora: "10:00", especialista: "RAUL LOYOLA",paciente: "CARMEN ISLA",rut: "10112348-3",prevision: "ISAPRE"},
+  { hora: "10:30", especialista: "ANTONIO LARENAS",paciente: "PABLO LOAYZA",rut: "13453234-1",prevision: "ISAPRE"},
+  { hora: "12:00", especialista: "MATIAS ARAVENA",paciente: "SUSANA POBLETE",rut: "14345656-6",prevision: "FONASA"},
+);
 document.write(`<h3>1.- Tabla nuevo listado Traumatología:</h3>`);
 document.write("<table>");
 document.write("<tr><th>HORA</th><th>ESPECIALISTA</th><th>PACIENTE</th><th>RUT</th><th>PREVISION</th></tr>");
-for (let i = 0; i < nuevosDatosTraumatologia.length; i++){
-document.write(
-  `
-  <tr>
-    <td>${nuevosDatosTraumatologia[i].hora}</td>
-    <td>${nuevosDatosTraumatologia[i].especialista}</td>
-    <td>${nuevosDatosTraumatologia[i].paciente}</td>
-    <td>${nuevosDatosTraumatologia[i].rut}</td>
-    <td>${nuevosDatosTraumatologia[i].prevision}</td>
-  </tr>
-  `
-)};
+for (let i = 0; i < radiologia.length; i++) {
+  document.write(
+    `<tr><td>${radiologia[i].hora}</td><td>${radiologia[i].especialista}</td><td>${radiologia[i].paciente}</td><td>${radiologia[i].rut}</td><td>${radiologia[i].prevision}</td></tr>`
+  );
+}
+for (let i = 0; i < traumatologia.length; i++) {
+  document.write(
+    `<tr><td>${traumatologia[i].hora}</td><td>${traumatologia[i].especialista}</td><td>${traumatologia[i].paciente}</td><td>${traumatologia[i].rut}</td><td>${traumatologia[i].prevision}</td></tr>`
+  );
+}
+for (let i = 0; i < dental.length; i++) {
+  document.write(
+    `<tr><td>${dental[i].hora}</td><td>${dental[i].especialista}</td><td>${dental[i].paciente}</td><td>${dental[i].rut}</td><td>${dental[i].prevision}</td></tr>`
+  );
+}
 document.write("</table><hr>");
 
 // 2.- EJERCICIO 2:

@@ -89,7 +89,7 @@ document.write(`<hr>`);
 
 
 // 4.- EJERCICIO 4:
-const totalDatosDelCentro = [...radiologia, ...traumatologia, ...dental, ...nuevosDatosTraumatologia];
+const totalDatosDelCentro = [...radiologia, ...traumatologia, ...dental];
 document.write(`<h3>4.- Listado total de pacientes:</h3>`);
 totalDatosDelCentro.forEach(({ paciente }) => {
   document.write(`<p>${paciente}</p>`);
